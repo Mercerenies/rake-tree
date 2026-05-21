@@ -1,3 +1,11 @@
 #!/usr/bin/env ruby
 
 require "rake/tree"
+
+if ARGV.length != 1
+  puts "Usage: rake-tree <output_file>"
+  exit 1
+end
+
+output_file = ARGV[0]
+Rake::Tree.write_viz(output_file)

@@ -1,8 +1,48 @@
+
 AllCops:
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.1.0
+
+Layout/LeadingEmptyLines:
+  Enabled: false
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/PerlBackrefs:
+  Enabled: false
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  Enabled: false
 
-Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
+
+Style/BarePercentLiterals:
+  EnforcedStyle: percent_q
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/GuardClause:
+  MinBodyLength: 2
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/ZeroLengthPredicate:
+  Enabled: false
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
